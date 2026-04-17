@@ -56,13 +56,11 @@
 			display: flex;
 			box-sizing: border-box;
 		}
-    .hero-title {
-  opacity: 0;
-  transform: translateY(-20px) scale(0.95);
-  animation: heroFadeZoom 1s ease forwards;
-  animation-delay: 0.5s;
-  letter-spacing: 2px;  
+		#home img {
+  height: 100vh;
+  object-fit: cover;
 }
+   
 
 @keyframes heroFadeZoom {
   0% {
@@ -104,6 +102,8 @@
 
 .hero-title {
   opacity: 0;
+  transform: translateY(-20px) scale(0.95);
+
   font-size: clamp(2.2rem, 8vw, 6rem);
   font-weight: bold;
   letter-spacing: 2px;
@@ -123,6 +123,21 @@
 
   animation: slideRight 1s ease forwards;
   animation-delay: 0.8s;
+}
+		@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .hero-text {
+    width: 95%;
+    top: 55%;
+  }
 }
 
 .image-slider {
@@ -707,17 +722,18 @@ button {
 
 
 
-<div class="container-fluid position-relative p-0" id="home">
-  <img src="home.jpg" class="img-fluid w-100" alt="Momensa">
+<div class="hero-section" id="home">
+  <img src="home.jpg" alt="Momensa Photography" class="hero-img">
 
-  <div class="position-absolute hero-text text-center text-white">
- 
-    <h1 class="hero-title fw-bold">Momensa Photography – Wedding Photographer in Kerala</h1>
- 
+  <div class="hero-text text-center text-white">
+    <h1 class="hero-title">
+      Momensa Photography – Wedding Photographer in Kerala
+    </h1>
 
- <h2 class="hero-subtitle slide-right">
-  Still — capturing what lasts
-</h2>
+    <h2 class="hero-subtitle">
+      Still — capturing what lasts
+    </h2>
+  </div>
 </div>
 
 </div>
