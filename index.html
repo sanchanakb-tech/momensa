@@ -156,11 +156,17 @@
 .about-content {
   font-size: 20px;
   display: flex;
-  align-items: center;       
+  align-items: center;
   justify-content: space-between;
   gap: 30px;
   padding: 20px;
-  margin-left: 20px;
+  margin-left: 0; /* remove fixed left spacing */
+}
+		@media (max-width: 768px) {
+  .booking-form {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .text-side {
@@ -611,6 +617,26 @@ button {
       max-width: 600px;
       border-radius: 16px;
     }
+		@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .booking-form {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .booking-form .btn {
+    width: auto;
+    display: inline-block;
+  }
+}
 
 	</style>
 </head>
