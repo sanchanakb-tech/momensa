@@ -23,6 +23,21 @@
 <meta property="og:site_name" content="Momensa Visualix Photography">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+	<!-- ✅ ADD THESE INSIDE <head> SECTION -->
+
+<meta name="theme-color" content="#000000">
+
+<link rel="preload" as="image" href="home.jpg">
+
+<meta property="og:image:secure_url" content="https://www.momensavisualix.in/home.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Momensa Photography">
+<meta name="twitter:description" content="Professional wedding, newborn, modeling and birthday photography in Kerala.">
+<meta name="twitter:image" content="https://www.momensavisualix.in/home.jpg">
+
+<!-- ✅ UPDATED KEYWORDS -->
+<meta name="keywords" content="wedding photographer in Kerala, wedding photography Palakkad, newborn photography Kerala, birthday photography Kerala, modeling photoshoot Kerala, cinematic wedding photography, professional photographer Palakkad">
 
   <!-- ✅ Favicon -->
   <link rel="icon" href="logo.png" type="image/png">
@@ -34,7 +49,9 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.momensavisualix.in/">
 
- <script type="application/ld+json">
+ <!-- ✅ UPDATE JSON-LD -->
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "PhotographyBusiness",
@@ -48,7 +65,11 @@
     "addressRegion": "Kerala",
     "addressCountry": "India"
   },
-  "areaServed": "Kerala"
+  "areaServed": "Kerala",
+  "sameAs": [
+    "https://instagram.com/momensavisualix",
+    "https://www.facebook.com/momensavisualix"
+  ]
 }
 </script>
 	
@@ -818,7 +839,13 @@ button {
 
 
 <div class="hero-section" id="home">
-  <img src="home.jpg" alt="Momensa Photography" class="hero-img">
+ <!-- ✅ UPDATE HERO IMAGE -->
+
+<img src="home.jpg"
+     alt="Momensa Photography"
+     class="hero-img"
+     width="1920"
+     height="1080">
 
   <div class="hero-text text-center text-white">
     <h1 class="hero-title">
@@ -995,7 +1022,7 @@ to bring creative and modern visual styles.
 <section class="pb-5">
   <div class="container">
     <div class="video-box">
-      <video width="100%" autoplay muted controls >
+      <video width="100%" autoplay muted controls preload="none">
         <source src="modelings.mp4" type="video/mp4">
       </video>
     </div>
@@ -1078,7 +1105,7 @@ to bring creative and modern visual styles.
 <section>
   <div class="container">
     <div class="video-box animate-fade">
-      <video width="100%" style="padding: 30px;" autoplay muted controls>
+      <video width="100%" autoplay muted controls preload="none">
         <source src="wed shoot.mp4" type="video/mp4">
       </video>
     </div>
@@ -1187,7 +1214,7 @@ to bring creative and modern visual styles.
 <section class="pb-5">
   <div class="container">
     <div class="video-box">
-      <video width="100%" autoplay muted controls >
+      <video width="100%" autoplay muted controls preload="none">
         <source src="birthday shoot.mp4" type="video/mp4">
       </video>
     </div>
